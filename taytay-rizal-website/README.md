@@ -26,7 +26,8 @@ taytay-rizal-website/
 │   ├── images/                 ← all 20 photos and the official seal
 │   └── js/
 │       ├── barangays.js        ← barangay data + search
-│       └── news.js             ← news posts + filter tabs
+│       ├── news.js             ← news posts + filter tabs
+│       └── scenes-strip.js     ← Home photo strip: drifts on its own, drag or swipe to move
 ├── docs/
 │   ├── DESIGN-SYSTEM.md        ← colors, fonts, spacing, components
 │   ├── DATA-AND-SOURCES.md     ← every fact used, where it came from, what to double-check

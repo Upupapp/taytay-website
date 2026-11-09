@@ -11,6 +11,9 @@
 <style>
 body{margin:0;background:#FFFFFF}
 a{color:#0B2A6F}a:hover{color:#C8102E}
+#scenes-strip{scrollbar-width:none;-ms-overflow-style:none;cursor:grab;user-select:none;-webkit-user-select:none}
+#scenes-strip::-webkit-scrollbar{display:none}
+#scenes-strip.is-dragging{cursor:grabbing}
 </style>
 </head>
 <body>
@@ -64,8 +67,8 @@ a{color:#0B2A6F}a:hover{color:#C8102E}
 
 <!-- ABOUT + GLANCE + TIMELINE -->
 <section aria-label="Scenes from Taytay" style="margin-top: -64px; position: relative">
-<div style="overflow-x: auto; padding: 0 32px 8px">
-<div style="display: flex; gap: 18px; width: max-content; margin: 0 auto">
+<div id="scenes-strip" style="overflow-x: auto; padding: 0 32px 8px">
+<div id="scenes-track" style="display: flex; gap: 18px; width: max-content; margin: 0 auto">
 <figure style="margin: 0; width: 230px; height: 290px; flex-shrink: 0; border-radius: 20px; overflow: hidden; position: relative; box-shadow: 0 18px 40px rgba(11,42,111,0.18)"><img src="assets/images/municipal-hall.jpg" alt="The New Taytay Municipal Hall" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% center"><figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #101828; font-weight: 700; font-size: 14px; padding: 7px 14px; border-radius: 999px">Municipal Hall</figcaption></figure>
 <figure style="margin: 0; width: 230px; height: 290px; flex-shrink: 0; border-radius: 20px; overflow: hidden; position: relative; box-shadow: 0 18px 40px rgba(11,42,111,0.18)"><img src="assets/images/church-facade-detail.jpg" alt="Facade of St. John the Baptist Parish Church with the statue of its patron" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 12% center"><figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #101828; font-weight: 700; font-size: 14px; padding: 7px 14px; border-radius: 999px">Taytay Church</figcaption></figure>
 <figure style="margin: 0; width: 230px; height: 290px; flex-shrink: 0; border-radius: 20px; overflow: hidden; position: relative; box-shadow: 0 18px 40px rgba(11,42,111,0.18)"><img src="assets/images/rattan-furniture.jpg" alt="Woven rattan chairs and baskets at a Taytay furniture shop" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% center"><figcaption style="position: absolute; left: 16px; bottom: 16px; background: #FFFFFF; color: #101828; font-weight: 700; font-size: 14px; padding: 7px 14px; border-radius: 999px">Furniture &amp; Crafts</figcaption></figure>
@@ -357,5 +360,6 @@ a{color:#0B2A6F}a:hover{color:#C8102E}
 
 </div>
 
+<script src="assets/js/scenes-strip.js"></script>
 </body>
 </html>
