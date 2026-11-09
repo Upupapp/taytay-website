@@ -15,7 +15,6 @@
   var setWidth = 0;
   var pos = 0;
   var lastSet = -1;
-  var hovering = false;
   var dragging = false;
   var dragX = 0;
   var holdUntil = 0;
@@ -68,7 +67,7 @@
   function tick(now) {
     var dt = lastTime ? Math.min(now - lastTime, 100) : 0;
     lastTime = now;
-    if (!hovering && !dragging && !reduceMotion.matches && now >= holdUntil) {
+    if (!dragging && !reduceMotion.matches && now >= holdUntil) {
       pos += (SPEED * dt) / 1000;
       wrap();
       set();
@@ -115,14 +114,6 @@
   strip.addEventListener('pointercancel', endDrag);
   track.addEventListener('dragstart', function (e) {
     e.preventDefault();
-  });
-
-  // Holding the mouse over the strip stops it, so a photo can be looked at.
-  strip.addEventListener('pointerenter', function (e) {
-    if (e.pointerType === 'mouse') hovering = true;
-  });
-  strip.addEventListener('pointerleave', function (e) {
-    if (e.pointerType === 'mouse') hovering = false;
   });
 
   window.addEventListener('resize', function () {

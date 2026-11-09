@@ -10,7 +10,7 @@ An 8-page informational website for the Municipality of Taytay, Rizal, hosted as
 - `assets/images/` holds all photos and `taytay-seal.png`. Reference them with relative paths (`assets/images/…`). Never use absolute `/` paths, because the site is served from `/taytay-website/` on GitHub Pages.
 - `assets/js/barangays.js` holds the barangay data array and the live search. It renders cards into `#brgy-list` and shows `#brgy-none` when nothing matches.
 - `assets/js/news.js` holds the news posts array and the All/News/Announcements filter. It renders into `#news-tabs` and `#news-grid`.
-- `assets/js/scenes-strip.js` makes the Home page photo strip (`#scenes-strip` / `#scenes-track`) drift sideways in an endless loop. It clones the figures (copies are `aria-hidden`), pauses on mouse hover, lets a mouse drag it, and stays still when the visitor's system asks for reduced motion. To add or remove a photo, edit only the original figures in `index.html`.
+- `assets/js/scenes-strip.js` makes the Home page photo strip (`#scenes-strip` / `#scenes-track`) drift sideways in an endless loop. It clones the figures (copies are `aria-hidden`), keeps moving under the mouse (the owner asked for no hover pause), lets a mouse drag it, and stays still when the visitor's system asks for reduced motion. To add or remove a photo, edit only the original figures in `index.html`.
 - `docs/` holds the design system, data sources, image list and a plain-text copy of every page. Update these when content changes.
 - `design-source/` holds the original Claude Design files. They are reference only and are not served by the site. Don't edit them.
 
