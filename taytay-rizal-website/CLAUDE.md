@@ -33,3 +33,5 @@ Open `index.html` directly in a browser, or run `python -m http.server 8000` in 
 
 ## Deploy
 Commit and push to `main`. GitHub Pages serves the site from the repo root (Settings → Pages → Deploy from a branch → `main` / root). The `.nojekyll` file must stay.
+
+Netlify also serves it, at https://taytaywebsite.netlify.app (project `taytaywebsite`), deploying `main` on every push. `netlify.toml` at the repository root tells it to publish `taytay-rizal-website/` rather than the root, where there is no page; keep it.

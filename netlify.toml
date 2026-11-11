@@ -1,0 +1,6 @@
+# Netlify (project `taytaywebsite`, https://taytaywebsite.netlify.app) publishes the site's folder,
+# not the repository root: every page lives in taytay-rizal-website/. With the root published, the
+# site answered "Page not found" (fixed 2026-11-11). Plain HTML, so there is no build command.
+[build]
+  publish = "taytay-rizal-website"
+  command = ""
